@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #e6f7ff;
     color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #0052cc;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -15,23 +15,32 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #003d99;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 15px 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #002266;
+    border-radius: 5px;
 }
 
 section {
@@ -43,8 +52,8 @@ section {
 }
 
 h2 {
-    color: #4CAF50;
-    font-size: 1.5em;
+    color: #0052cc;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
@@ -78,7 +87,11 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #0052cc;
+}
+
+ul li a:hover {
+    text-decoration: underline;
 }
 
 form {
@@ -99,12 +112,12 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #4CAF50;
+    border-color: #0052cc;
     outline: none;
 }
 
 form button {
-    background-color: #4CAF50;
+    background-color: #0052cc;
     color: white;
     border: none;
     cursor: pointer;
@@ -113,11 +126,11 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #003d99;
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #0052cc;
     color: white;
     text-align: center;
     padding: 1em 0;
