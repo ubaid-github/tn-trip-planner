@@ -103,7 +103,7 @@ form label {
     margin: 10px 0 5px;
 }
 
-form input, form textarea, form button {
+form input, form textarea, form button, form select {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -111,7 +111,7 @@ form input, form textarea, form button {
     font-size: 1em;
 }
 
-form input:focus, form textarea:focus {
+form input:focus, form textarea:focus, form select:focus {
     border-color: #0052cc;
     outline: none;
 }
