@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahman Family Trip Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rahman Family Trip Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#itinerary">Itinerary</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#links">Useful Links</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Rahman Family Trip!</h2>
+        <p>Welcome to our family trip planning page! We are excited for our trip to Gatlinburg, TN. Below are the details of our trip and activities planned.</p>
+        <p><strong>Housing:</strong> 1229 Bavarian Way, Gatlinburg, TN 37738 (<a href="https://www.airbnb.com/rooms/873819528302591478?check_out=2024-07-04&viralityEntryPoint=1&unique_share_id=F2AF0C0A-64E7-4CFB-A26C-693CB7A8C6AB&slcid=f9fd8419ca224b329cf9f724a2999d2d&s=76&feature=share&adults=1&check_in=2024-06-29&channel=native&slug=ax6h2uI7&source_impression_id=p3_1718816746_P3E3R0OXZWlYd0N4" target="_blank">Airbnb</a>)</p>
+    </section>
+
+    <section id="itinerary">
+        <h2>Itinerary</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Owner</th>
+                <th>Breakfast</th>
+                <th>Snack (opt)</th>
+                <th>Dinner</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ubaid & Nabeel</td>
+                <td>Continental</td>
+                <td></td>
+                <td>BBQ</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aqter and Family</td>
+                <td>...</td>
+                <td></td>
+                <td>Biryani</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hafeez and Family</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Khaleel and Family</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="activities">
+        <h2>All Ages Activities</h2>
+        <table>
+            <tr>
+                <th>Activity</th>
+                <th>Website</th>
+                <th>Location (relative to house)</th>
+                <th>Prices</th>
+                <th>Hours</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Moonshine Mountain Coaster</td>
+                <td><a href="https://www.moonshinemountaincoaster.com">Link</a></td>
+                <td>306 Parkway, Gatlinburg, TN 37738 (15 min)</td>
+                <td>$5 to $10</td>
+                <td>10am to 10pm</td>
+                <td>Include in pass</td>
+            </tr>
+            <tr>
+                <td>Ripley's Mountain Coaster</td>
+                <td><a href="https://www.ripleys.com/gatlinburg/ripleys-mountain-coaster/">Link</a></td>
+                <td>386 Parkway, Gatlinburg, TN 37738 (15 min)</td>
+                <td>Avg $25, might be worth to look into combo passes</td>
+                <td>10am to 10pm</td>
+                <td>Booking groups for multiple Ripley's attractions might be cheaper</td>
+            </tr>
+            <tr>
+                <td>SMO Rafting</td>
+                <td><a href="https://www.smokymountainrafting.com">Link</a></td>
+                <td>3299 Hartford Road, Hartford, TN 37753 (1 hr towards NC)</td>
+                <td>$48 per person</td>
+                <td>Depends on booking, trip is 1.5 hrs long</td>
+                <td>Multiple different views, this one is the family-friendly one</td>
+            </tr>
+            <!-- Add other activities as needed -->
+        </table>
+    </section>
+
+    <section id="links">
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="https://www.gatlinburg.com/great-smoky-mountains/hiking-trails/">Hiking Trails</a></li>
+            <li><a href="https://www.gatlinburg.com/great-smoky-mountains/scenic-drives/">Scenic Drives</a></li>
+            <li><a href="https://www.gatlinburg.com/great-smoky-mountains/waterfalls/">Waterfalls</a></li>
+            <li><a href="https://www.gatlinburg.com/things-to-do/outdoor-activities/horseback-riding/">Horseback Riding</a></li>
+            <li><a href="https://www.gatlinburg.com/things-to-do/outdoor-activities/water-rafting/">Rafting</a></li>
+            <li><a href="https://www.gatlinburg.com/food-and-drink/restaurants/">Sweet Treat</a></li>
+            <li><a href="https://www.gatlinburg.com/events/annual-events/fourth-of-july/">July 4th Events</a></li>
+            <!-- Add other useful links as needed -->
+        </ul>
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <form action="https://formspree.io/f/mvgpppve" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rahman Family Trip Planner. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
