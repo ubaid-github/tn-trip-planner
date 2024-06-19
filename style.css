@@ -103,7 +103,7 @@ form label {
     margin: 10px 0 5px;
 }
 
-form input, form textarea, form button, form select {
+form input, form textarea, form button {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -111,7 +111,7 @@ form input, form textarea, form button, form select {
     font-size: 1em;
 }
 
-form input:focus, form textarea:focus, form select:focus {
+form input:focus, form textarea:focus {
     border-color: #4B9CD3;
     outline: none;
 }
@@ -137,4 +137,47 @@ footer {
     position: relative;
     width: 100%;
     margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        box-sizing: border-box;
+    }
+
+    th {
+        background-color: #4B9CD3;
+        color: white;
+    }
+
+    td {
+        border-top: none;
+    }
+
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
 }
