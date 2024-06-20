@@ -24,17 +24,18 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #13294B;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 15px 10px;
+    padding: 10px 10px;
     display: block;
 }
 
