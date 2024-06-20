@@ -57,13 +57,17 @@ h2 {
     margin-bottom: 10px;
 }
 
-table {
+.table-wrapper {
+    display: none;
+}
+
+.desktop-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-table, th, td {
+.desktop-table, th, td {
     border: 1px solid #ddd;
 }
 
@@ -146,34 +150,39 @@ img {
     margin-top: 20px;
 }
 
-/* Responsive Design */
+.mobile-cards {
+    display: none;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #4B9CD3;
+}
+
 @media (max-width: 768px) {
-    table, th, td {
+    .table-wrapper {
+        display: none;
+    }
+
+    .mobile-cards {
         display: block;
-        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .table-wrapper {
+        display: block;
     }
 
-    th, td {
-        box-sizing: border-box;
-    }
-
-    th {
-        background-color: #4B9CD3;
-        color: white;
-    }
-
-    td {
-        border-top: none;
-    }
-
-    td:before {
-        content: attr(data-label);
-        font-weight: bold;
-        display: inline-block;
-        width: 100px;
-    }
-
-    ul {
-        padding-left: 20px;
+    .mobile-cards {
+        display: none;
     }
 }
