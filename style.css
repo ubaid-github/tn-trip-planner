@@ -145,3 +145,35 @@ img {
     border-radius: 8px;
     margin-top: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        box-sizing: border-box;
+    }
+
+    th {
+        background-color: #4B9CD3;
+        color: white;
+    }
+
+    td {
+        border-top: none;
+    }
+
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
